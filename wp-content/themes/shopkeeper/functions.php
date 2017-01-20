@@ -945,3 +945,27 @@ function yith_wcwl_added_to_cart_message( $message ){
    return false;
 }
 add_action( 'yith_wcwl_added_to_cart_message', 'yith_wcwl_added_to_cart_message' );
+
+//==============================================================================
+// Allow all imports
+//==============================================================================
+
+add_filter('upload_mimes', 't4a_add_custom_upload_mimes');
+
+function t4a_add_custom_upload_mimes($existing_mimes){
+    return array_merge($existing_mimes, array(
+        'csv' => 'application/octet-stream',
+        'xml' => 'application/atom+xml',
+        '7z' => 'application/x-7z-compressed',
+        'rar' => 'package/rar',
+        'tar' => 'package/x-tar',
+        'tgz' => 'application/x-tar-gz',
+        'apk' => 'application/vnd.android.package-archive',
+        'zip' => 'package/zip',
+        'img|iso' => 'package/img',
+        'gz|gzip' => 'package/x-gzip',
+        'deb|rpm' => 'package/x-app',
+        'ttf|woff|woff2|eot' => 'application/x-font') );
+    return $existing_mimes;
+};
+

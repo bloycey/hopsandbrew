@@ -1,0 +1,45 @@
+/*
+Theme Name: Shopkeeper Child
+Theme URI: http://shopkeeper.getbowtied.com/
+Description: This is a child theme for Shopkeeper.
+Author: Get Bowtied
+Author URI: http: //www.getbowtied.com/
+Template: shopkeeper
+Version: 1.0
+*/
+
+@import url("../shopkeeper/style.css");
+
+/****************************************************************/
+/*************** ADD YOUR CUSTOM CSS IN THIS AREA ***************/
+/****************************************************************/
+
+@font-face {
+  font-family: 'League';
+  src:  url('/wp-content/uploads/2017/01/leaguespartan-bold.woff2') format('woff2'),
+        url('/wp-content/uploads/2017/01/leaguespartan-bold.woff') format('woff');
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'League', sans-serif !important;
+}
+
+
+.site-header {
+  background: rgba(255,255,255,0.5) !important;
+}
+
+#hero-panel {
+  background-attachment: fixed;
+}
+
+.col-center {
+    width: 65%;
+    margin: 0 auto;
+}
+
+
+
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
