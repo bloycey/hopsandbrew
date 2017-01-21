@@ -1,9 +1,9 @@
 /*
-Theme Name: Shopkeeper Child
+Theme Name: Hops and Brew Theme
 Theme URI: http://shopkeeper.getbowtied.com/
-Description: This is a child theme for Shopkeeper.
-Author: Get Bowtied
-Author URI: http: //www.getbowtied.com/
+Description: A child theme made for 'Hops and Brew' based off the shopkeeper theme.
+Author: Cake Web Solutions
+Author URI: www.cakewebsolutions.com.au
 Template: shopkeeper
 Version: 1.0
 */
@@ -11,7 +11,7 @@ Version: 1.0
 @import url("../shopkeeper/style.css");
 
 /****************************************************************/
-/*************** ADD YOUR CUSTOM CSS IN THIS AREA ***************/
+/*************** CUSTOM STYLES ***************/
 /****************************************************************/
 
 @font-face {
@@ -20,23 +20,101 @@ Version: 1.0
         url('/wp-content/uploads/2017/01/leaguespartan-bold.woff') format('woff');
 }
 
-h1, h2, h3, h4, h5, h6 {
-font-family: 'League', sans-serif !important;
+h1, h2, h3, h4, h5, h6, .comments-title, .comment-author, #reply-title, #site-footer .widget-title, .accordion_title, .ui-tabs-anchor, .products .button, .site-title a, .post_meta_archive a, .post_meta a, .post_tags a, #nav-below a, .list_categories a, .list_shop_categories a, .main-navigation > ul > li > a, .main-navigation .mega-menu > ul > li > a, .more-link, .top-page-excerpt, .select2-search input, .product_after_shop_loop_buttons a, .woocommerce .products-grid a.button, .page-numbers, input.qty, .button, button, .button_text, input[type="button"], input[type="reset"], input[type="submit"], .woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce #content input.button, .woocommerce-page #content input.button, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.alt, .woocommerce #content input.button.alt, .woocommerce-page a.button.alt, .woocommerce-page button.button.alt, .woocommerce-page input.button.alt, .woocommerce-page #respond input#submit.alt, .woocommerce-page #content input.button.alt, .yith-wcwl-wishlistexistsbrowse.show a, .share-product-text, .tabs > li > a, label, .comment-respond label, .product_meta_title, .woocommerce table.shop_table th, .woocommerce-page table.shop_table th, #map_button, .coupon_code_text, .woocommerce .cart-collaterals .cart_totals tr.order-total td strong, .woocommerce-page .cart-collaterals .cart_totals tr.order-total td strong, .cart-wishlist-empty, .return-to-shop .wc-backward, .order-number a, .account_view_link, .post-edit-link, .from_the_blog_title, .icon_box_read_more, .vc_pie_chart_value, .shortcode_banner_simple_bullet, .shortcode_banner_simple_height_bullet, .category_name, .woocommerce span.onsale, .woocommerce-page span.onsale, .out_of_stock_badge_single, .out_of_stock_badge_loop, .page-numbers, .page-links, .add_to_wishlist, .yith-wcwl-wishlistaddedbrowse, .yith-wcwl-wishlistexistsbrowse, .filters-group, .product-name, .woocommerce-page .my_account_container table.shop_table.order_details_footer tr:last-child td:last-child .amount, .customer_details dt, .widget h3, .widget ul a, .widget a, .widget .total .amount, .wishlist-in-stock, .wishlist-out-of-stock, .comment-reply-link, .comment-edit-link, .widget_calendar table thead tr th, .page-type, .mobile-navigation a, table thead tr th, .portfolio_single_list_cat, .portfolio-categories, .shipping-calculator-button, .vc_btn, .vc_btn2, .vc_btn3, .offcanvas-menu-button .menu-button-text, .account-tab-item .account-tab-link, .account-tab-list .sep, ul.order_details li span, ul.order_details.bacs_details li, .widget_calendar caption, .widget_recent_comments li a, .edit-account legend, .widget_shopping_cart li.empty, .cart-collaterals .cart_totals .shop_table .order-total .woocommerce-Price-amount, .woocommerce table.cart .cart_item td a, .woocommerce #content table.cart .cart_item td a, .woocommerce-page table.cart .cart_item td a, .woocommerce-page #content table.cart .cart_item td a, .woocommerce table.cart .cart_item td span, .woocommerce #content table.cart .cart_item td span, .woocommerce-page table.cart .cart_item td span, .woocommerce-page #content table.cart .cart_item td span, .woocommerce-MyAccount-navigation ul li, .cd-quick-view .cd-item-info .product_infos .quickview-badges .onsale, .woocommerce-message .woocommerce-message-wrapper .notice_text, .woocommerce-message .product_notification_text, .woocommerce-info .woocommerce-message-wrapper .notice_text, .woocommerce .cart-collaterals .cart_totals .cart-subtotal th, .woocommerce-page .cart-collaterals .cart_totals .cart-subtotal th, .woocommerce .cart-collaterals .cart_totals tr.shipping th, .woocommerce-page .cart-collaterals .cart_totals tr.shipping th, .woocommerce .cart-collaterals .cart_totals tr.order-total th, .woocommerce-page .cart-collaterals .cart_totals tr.order-total th, .woocommerce .cart-collaterals .cart_totals h2, .woocommerce .cart-collaterals .cross-sells h2, .woocommerce-cart #content table.cart td.actions .coupon #coupon_code, form.checkout_coupon #coupon_code, .woocommerce-checkout .woocommerce-info, .shopkeeper_checkout_coupon, .shopkeeper_checkout_login, .minicart-message, .no-products-info p.woocommerce-error .notice_text, .woocommerce .order_review_wrapper table.shop_table tfoot td, .woocommerce .order_review_wrapper table.shop_table tfoot th, .woocommerce-page .order_review_wrapper table.shop_table tfoot td, .woocommerce-page .order_review_wrapper table.shop_table tfoot th, .no-products-info p, .getbowtied_blog_ajax_load_button a, .getbowtied_ajax_load_button a, .index-layout-2 ul.blog-posts .blog-post article .post-categories li a, .index-layout-3 .blog-posts_container ul.blog-posts .blog-post article .post-categories li a, .index-layout-2 ul.blog-posts .blog-post .post_content_wrapper .post_content .read_more, .index-layout-3 .blog-posts_container ul.blog-posts .blog-post article .post_content_wrapper .post_content .read_more {
+    font-family: 'League',sans-serif !important;
 }
 
 
-.site-header {
+ul a:hover {
+color: #ee4e00 !important;
+}
+
+/*.site-header {
   background: rgba(255,255,255,0.5) !important;
+}*/
+
+.site-header, .default-navigation, .main-navigation .mega-menu > ul > li > a {
+    font-size: 16px !important;
 }
 
-#hero-panel {
+/*#hero-panel {
   background-attachment: fixed;
-}
+} */
 
 .col-center {
     width: 65%;
     margin: 0 auto;
+    font-family: serif !important;
 }
+
+#hero-banner {
+position: relative;
+}
+
+.position-relative {
+position: relative;
+}
+
+#hero-banner {
+    background: linear-gradient(rgba(0, 57, 48, 0.02), #003930 80%);
+}
+
+.site-header.sticky {
+    background: #ffffff !important;
+}
+.site-header {
+    background: linear-gradient(#fff, transparent 100%) !important;
+}
+
+*:hover {
+    opacity: 1
+}
+
+
+/****FIX WHITE GAP ON EDGE OF SLIDER ********/
+
+.slider .vc_column_container>.vc_column-inner {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/*******************CODE TO GIVE PARALLAX EFFECT ON HEADER ************ possibly unnecessary **************/
+
+/*.sb-bg-slider-params.sb-slider-data-source-row.sb-slider-bg-type-cover {
+    position: fixed;
+}*/
+
+
+/************** Email signup form ********************/
+
+.mc4wp-form-fields p {
+    display: inline-block !important;
+}
+
+.mc4wp-form-fields {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mc4wp-form-fields input[type="email"] {
+    width: 50vw !important;
+    margin-right: 30px !important;
+    padding: 24px;
+    border: solid 1px #ee4e00;
+font-family: sans-serif;
+}
+
+input[type="email"]::-webkit-input-placeholder {
+    color: #ee4e00;
+}
+
+input[type="email"]:focus {
+box-shadow: 0 0 5px rgba(238, 78, 0, 1);
+  padding: 24px;
+  border: 1px solid rgba(238, 78, 0, 1);
+}
+
 
 
 
