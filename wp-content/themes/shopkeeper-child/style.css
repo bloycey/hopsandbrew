@@ -59,12 +59,25 @@ position: relative;
     background: linear-gradient(rgba(0, 57, 48, 0.02), #003930 80%);
 }
 
-.site-header.sticky {
+.home header#masthead.sticky {
     background: #ffffff !important;
 }
-.site-header {
+
+header#masthead {
+    background: #ffffff !important;
+}
+
+.home header#masthead {
     background: linear-gradient(#fff, transparent 100%) !important;
 }
+
+/*.home .site-header {
+    background: linear-gradient(#fff, transparent 100%) !important;
+}*/
+
+/*.site-header {
+background-color: #003930;
+}*/
 
 *:hover {
     opacity: 1
@@ -73,9 +86,14 @@ position: relative;
 
 /****FIX WHITE GAP ON EDGE OF SLIDER ********/
 
-.slider .vc_column_container>.vc_column-inner {
+.slider .vc_column-inner {
     padding-left: 0px;
     padding-right: 0px;
+}
+
+.email-form-template .vc_column-inner {
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 /*******************CODE TO GIVE PARALLAX EFFECT ON HEADER ************ possibly unnecessary **************/
@@ -115,7 +133,176 @@ box-shadow: 0 0 5px rgba(238, 78, 0, 1);
   border: 1px solid rgba(238, 78, 0, 1);
 }
 
+/*********************TOURS PAGE*****************************/
 
+h1.page-title {
+    color: white;
+}
+
+/*.page-id-13 div#primary {
+    background: url("http://www.hopsandbrew.dev/wp-content/uploads/2017/01/fermenter.jpg");
+background-size: cover; 
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+} */
+
+
+.page-id-13 div#primary {
+    background-color: #ffffff;
+} 
+
+.page-title:after {
+    background: white !important;
+}
+
+header.entry-header.with_featured_img {
+    background-attachment: fixed;
+}
+
+table.em-calendar td.eventful a, table.em-calendar td.eventful-today a {
+    color: #ffffff;
+}
+
+td.eventful {
+    background: #ee4e00;
+    border-radius: 50%;
+}
+
+div.em-calendar-wrapper {
+    position: relative;
+    width: 300px;
+}
+
+.vc_tta.vc_tta-shape-rounded .vc_tta-panel-body, .vc_tta.vc_tta-shape-rounded .vc_tta-panel-heading, .vc_tta.vc_tta-shape-rounded .vc_tta-tab>a {
+    border-radius: 0px;
+}
+
+li.vc_tta-tab:last-child {
+    margin-left: 5px !important;
+}
+
+.vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab.vc_active>a {
+    color: #ee4e00 !important;
+}
+
+.vc_tta-tab {
+    font-family: League;
+}
+
+.vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab>a {
+    border-color: #e3e3e3;
+    background-color: #f6f6f6;
+    color: #003930;
+}
+
+.page-id-13 #site-footer, #site-footer .copyright_text a {
+    color: #003930;
+}
+.page-id-13 #site-footer {
+    background: #f6f6f6;
+}
+
+#site-footer, #site-footer .copyright_text a {
+    color: #003930 !important;
+}
+
+.page-id-13 header.entry-header {
+    display: none;
+}
+
+.page-id-13 ul.footer_socials_wrapper i {
+    color: #003930;
+}
+
+/****************MEDIA QUERIES****************************/
+
+@media (max-width: 1305px) {
+
+#hero-banner {
+    margin-top: -280px !important;
+}
+
+#hero-banner h2 {
+font-size: 370% !important;
+}
+
+}
+
+@media (max-width: 1195px) {
+
+#hero-banner h2 {
+font-size: 320% !important;
+}
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+#hero-banner {
+    margin-top: -335px !important;
+}
+
+.vc_column-inner.vc_custom_1485165214791 {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.mc4wp-form-fields input[type="email"] {
+    width: 50vw !important;
+    margin-right: 0px !important;
+    padding: 24px;
+    border: solid 1px #ee4e00;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h5 span {
+font-size: 130%;
+}
+
+}
+
+@media (max-width: 415px) {
+
+#hero-banner h2 {
+font-size: 250% !important;
+}
+
+#hero-banner h4 {
+font-size: 136% !important;
+}
+
+.col-center {
+    width: 88%;
+    margin: 0 auto;
+    font-family: serif !important;
+}
+
+
+/*****Dodgy Selector Warning - It's the space underneath the 'see how the pros do it' panel ***************/
+.vc_column-inner.vc_custom_1485165214791 {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.mc4wp-form-fields input[type="email"] {
+    width: 50vw !important;
+    margin-right: 0px !important;
+    padding: 24px;
+    border: solid 1px #ee4e00;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h5 span {
+font-size: 170%;
+}
+
+}
 
 
 /****************************************************************/
